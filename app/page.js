@@ -139,10 +139,11 @@ export default function Home() {
             justifyContent={"space-evenly"}
           >
             {clothes.map((cloth) => (
-            <Link style={{textDecoration:"none",color:"black"}} href={`/details/${cloth.id}`}>  <Cloth
+            <Link key={cloth.image} style={{textDecoration:"none",color:"black"}} href={`/details/${cloth.id}`}>  <Cloth
                 image={cloth.image}
                 title={cloth.title}
                 price={cloth.price}
+                key={cloth.image}
               /></Link>
             ))}
           </Stack>

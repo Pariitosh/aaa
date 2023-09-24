@@ -35,7 +35,7 @@ export default function CartCloth({image,title,price,quantity}){
     else{
     return(
          <Stack direction={'row'} spacing={5} justifyContent={'center'} alignItems={'flex-start'}>
-            <Image style={{border:"1px solid #8D7B7B",borderRadius:'10px'}} height={80} width={70} src={image} ></Image>
+            <Image alt='img' style={{border:"1px solid #8D7B7B",borderRadius:'10px'}} height={80} width={70} src={image} ></Image>
             <Stack direction={'column'} spacing={2} justifyContent={'space-around'} alignContent={'flex-start'}>
             <Stack alignItems={'flex-start'}><h4 style={{fontWeight:"100"}}>{title}</h4>
             <p style={{color:"#8D7B7B"}}>Size L</p>

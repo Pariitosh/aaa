@@ -5,7 +5,7 @@ export default function Cloth({image,title,price}){
     return(
         <>
             <Stack spacing={0.3}>
-                <Image height={150} width={120} src={image}></Image>
+                <Image alt='img' height={150} width={120} src={image}></Image>
                 <h5>{title}</h5>
                 <p style={{fontSize:"1.5vh",color:"#8D7B7B"}}>INR {price}</p>
             </Stack>
